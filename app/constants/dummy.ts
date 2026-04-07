@@ -1,5 +1,5 @@
 import { ServiceType } from "@/types/services";
-import { Battery, CheckCircle2, Clock, Hammer, MapPin, Settings, Shield, ShieldCheck, Truck, UserCheck, Users, Wrench, Zap } from "lucide-react";
+import { Clock, Hammer, MapPin, Settings, Shield, ShieldCheck, Truck, UserCheck, Users, Wrench, Zap } from "lucide-react";
 
 // About
 export   const checkItems = [
@@ -13,42 +13,42 @@ export   const checkItems = [
 export const services: ServiceType[] = [
   {
     title: "Raja Derek",
-    description: "Layanan derek profesional 24 jam untuk berbagai jenis kendaraan bermasalah atau kecelakaan dengan penanganan aman dan cepat.",
-    image: "https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=800&auto=format&fit=crop",
+    description: "Layanan derek/towing mobil 24 jam untuk pengangkutan antar kota dan antar pulau, serta kebutuhan evakuasi kendaraan. Didukung oleh berbagai jenis armada seperti derek hidrolik, derek gendong, dan derek gantung yang dapat disesuaikan dengan kebutuhan operasional.",
+    image: "/layanan/derek.webp",
     features: [
-      { icon: Truck, text: "Layanan Darurat 24/7" },
-      { icon: Settings, text: "Armada Derek Modern" },
-      { icon: Zap, text: "Respon Cepat" }
+      { icon: Truck, text: "Armada lengkap & banyak" },
+      { icon: Settings, text: "Siaga 24 jam setiap hari" },
+      { icon: Zap, text: "Profesional, resmi, dan terpercaya" }
     ]
   },
   {
     title: "Raja Crane",
-    description: "Penyewaan crane dengan berbagai kapasitas beban untuk kebutuhan proyek konstruksi, pemindahan barang berat, dan industri.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=800&auto=format&fit=crop",
+    description: "Menyediakan layanan mobile crane dan truck mounted crane (TMC) dengan kapasitas angkat beragam. Didukung oleh tim berpengalaman untuk memastikan proses pengangkatan berjalan aman dan efisien.",
+    image: "/layanan/crane.webp",
     features: [
-      { icon: Hammer, text: "Kapasitas 10T - 100T" },
-      { icon: Settings, text: "Operator Tersertifikasi" },
-      { icon: Truck, text: "Maintenance Rutin" }
+      { icon: Hammer, text: "Kapasitas angkat hingga 60 ton" },
+      { icon: Settings, text: "Operator & rigger berpengalaman" },
+      { icon: Truck, text: "Standar keselamatan kerja terjaga" }
     ]
   },
   {
     title: "Raja Forklift",
-    description: "Solusi alat angkut pergudangan dan logistik. Menyediakan berbagai tipe forklift mulai dari elektrik hingga diesel.",
-    image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=800&auto=format&fit=crop",
+    description: "Layanan penyewaan forklift untuk mendukung proses pemindahan dan penataan barang di berbagai kebutuhan operasional, mulai dari pergudangan hingga kegiatan industri. Didukung oleh unit yang terawat dan siap digunakan untuk memastikan pekerjaan berjalan efisien dan aman.",
+    image: "layanan/forklift.webp",
     features: [
-      { icon: Zap, text: "Pilihan Elektrik & Diesel" },
-      { icon: Truck, text: "Sewa Harian/Bulanan" },
-      { icon: Settings, text: "Free Maintenance" }
+      { icon: Zap, text: "Daya angkat 2,5-7 ton" },
+      { icon: Truck, text: "Unit banyak dan terawat" },
+      { icon: Settings, text: "Operator andal dan berpengalaman" }
     ]
   },
   {
     title: "Raja Genset",
-    description: "Menyewakan generator set untuk backup kelistrikan event, proyek, maupun pabrik dengan kapasitas yang bisa disesuaikan.",
-    image: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?q=80&w=800&auto=format&fit=crop",
+    description: "Menyediakan layanan penyewaan genset untuk mendukung kebutuhan daya listrik di berbagai kegiatan operasional, industri, dan acara. Didukung oleh unit yang terawat dan siap digunakan untuk memastikan pasokan listrik tetap stabil dan andal.",
+    image: "layanan/genset.webp",
     features: [
-      { icon: Zap, text: "Kapasitas 10kVA - 500kVA" },
-      { icon: Settings, text: "Silent Mode Tersedia" },
-      { icon: Hammer, text: "Instalasi & Operator" }
+      { icon: Zap, text: "Daya 50-150 kVA" },
+      { icon: Settings, text: "Genset keluaran terbaru" },
+      { icon: Hammer, text: "Unit banyak" }
     ]
   }
 ];
@@ -56,29 +56,29 @@ export const services: ServiceType[] = [
 // Keunggulan
 export const features = [
   {
-    title: "Respon Cepat",
-    description: "Tim kami siap merespon dalam hitungan menit untuk kebutuhan darurat Anda",
-    icon: Zap,
+    title: "Armada Lengkap dan Terawat",
+    description: "Didukung berbagai jenis armada yang siap digunakan untuk memenuhi beragam kebutuhan operasional.",
+    icon: "/icon/armada.png",
   },
   {
-    title: "Layanan 24 Jam",
-    description: "Beroperasi tanpa henti, siap membantu kapanpun Anda membutuhkan",
-    icon: Clock,
+    title: "Tim Profesional dan Berpengalaman",
+    description: "Dijalankan oleh tenaga kerja yang kompeten, termasuk operator dan teknisi berpengalaman di bidangnya.",
+    icon: "/icon/team.png",
   },
   {
-    title: "Tim Profesional",
-    description: "Operator bersertifikat dan berpengalaman di bidangnya",
-    icon: Users,
+    title: "Jangkauan Operasional Luas",
+    description: "Melayani berbagai kebutuhan di berbagai wilayah dengan dukungan sistem operasional yang terkoordinasi.",
+    icon: "/icon/jangkauan.png",
   },
   {
-    title: "Armada Lengkap",
-    description: "Berbagai jenis dan kapasitas alat berat tersedia sesuai kebutuhan",
-    icon: Truck,
+    title: "Standar Keselamatan Kerja",
+    description: "Mengutamakan aspek keselamatan dalam setiap proses kerja untuk memastikan operasional berjalan aman dan terkontrol.",
+    icon: "/icon/P3K.png",
   },
   {
-    title: "Jangkauan Luas",
-    description: "Melayani area Jabodetabek, Bandung, Surabaya, dan kota besar lainnya",
-    icon: MapPin,
+    title: "Respons Cepat dan Fleksibel",
+    description: "Siap menyesuaikan kebutuhan operasional dengan respons yang cepat dan penanganan yang tepat.",
+    icon: "/icon/respon.png",
   }
 ];
 

@@ -19,10 +19,11 @@ import {
 
 const navLinks = [
   { name: "Beranda", href: "#beranda" },
-  { name: "Tentang Kami", href: "#tentang" },
   { name: "Layanan", href: "#layanan" },
-  { name: "Keunggulan", href: "#keunggulan" },
+  { name: "Mengapa Kami", href: "#tentang" },
+  // { name: "Keunggulan", href: "#keunggulan" },
   { name: "Portofolio", href: "#portfolio" },
+  { name: "Kontak", href: "#kontak" },
 ];
 
 const Logo = () => (

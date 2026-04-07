@@ -10,9 +10,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-  "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?q=80&w=1496&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1496&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=1496&auto=format&fit=crop"
+  "/tentangkami/1.webp",
+  "/tentangkami/2.webp",
+  "/tentangkami/3.webp",
+  "/tentangkami/4.webp",
+  "/tentangkami/5.webp",
+  "/tentangkami/6.webp",
+  "/tentangkami/7.webp",
 ];
 
 const viewportSettings = { once: true, amount: 0.3 };
@@ -132,28 +136,43 @@ export function About() {
             transition={transitionSettings}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden aspect-4/3 lg:aspect-4/3 shadow-sm bg-slate-100" ref={imageWrapperRef}>
-              <AnimatePresence mode="wait">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[4/3] shadow-sm bg-slate-800" ref={imageWrapperRef}>
+              <AnimatePresence initial={false}>
                 <motion.img 
                   key={currentImg}
                   initial={{ opacity: 0, scale: 1.05 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 1.2, ease: "easeInOut" }}
+                  transition={{ duration: 1.5, ease: "easeInOut" }}
                   src={images[currentImg]}
                   alt="Tim Lintas Cakra Cipta" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </AnimatePresence>
+
+              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-30">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentImg(idx)}
+                    aria-label={`Lihat gambar ${idx + 1}`}
+                    className={`h-2 rounded-full transition-all duration-500 ease-out ${
+                      idx === currentImg 
+                        ? 'w-8 bg-white' 
+                        : 'w-2 bg-white/50 hover:bg-white/80'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
 
-            <div 
+            {/* <div 
               ref={badgeRef}
-              className="absolute -bottom-8 right-4 lg:-bottom-8 lg:-right-8 bg-[#f5792c] rounded-xl p-6 shadow-xl shadow-orange-500/20 text-white z-20 min-w-[180px]"
+              className="absolute -bottom-8 right-4 lg:-bottom-8 lg:-right-8 bg-[#f5792c] rounded-xl p-6 shadow-xl shadow-orange-500/20 text-white z-40 min-w-[180px]"
             >
               <h3 className="text-4xl md:text-[40px] font-bold mb-1 tracking-tight">10+</h3>
               <p className="text-[13px] font-medium opacity-90 tracking-wide">Tahun Pengalaman</p>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div 
@@ -192,7 +211,7 @@ export function About() {
             >
               {checkItems.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#FF6231] shrink-0 stroke-[2.5]" />
+                  <CheckCircle2 className="w-5 h-5 text-[#FF6231] flex-shrink-0 stroke-[2.5]" />
                   <span className="text-[15px] font-medium text-slate-700">{item}</span>
                 </div>
               ))}

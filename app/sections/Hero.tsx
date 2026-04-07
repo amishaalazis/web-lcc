@@ -71,7 +71,7 @@ export function Hero({ startAnimation }: HeroProps) {
           animate={startAnimation ? "visible" : "hidden"}
           className="max-w-2xl space-y-8"
         >
-          {/* <motion.div variants={itemVariants} className="inline-block">
+          <motion.div variants={itemVariants} className="inline-block">
             <Badge
               variant="outline"
               className="bg-orange-500/20 text-white border-white/10 px-4 py-4 gap-2 text-sm font-medium rounded-full"
@@ -82,7 +82,7 @@ export function Hero({ startAnimation }: HeroProps) {
               />
               10+ Tahun Pengalaman
             </Badge>
-          </motion.div> */}
+          </motion.div>
 
           <motion.h1
             variants={itemVariants}

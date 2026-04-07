@@ -23,7 +23,7 @@ export default function Home() {
       <Services />
       <Features />
       <Portfolio />
-      <CTA />
+      {/* <CTA /> */}
     </main>
   );
 }
